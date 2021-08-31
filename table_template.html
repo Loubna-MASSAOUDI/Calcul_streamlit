@@ -1,0 +1,18 @@
+<head></head>
+<body>
+    <h1>Resultats</h1>
+    <table>
+        <tr>
+            <th>Variables</th>
+            <th>Résultats</th>
+           
+        </tr>
+        {% for idx, row in df.iterrows() %}
+        <tr>
+            {% for colname in df.columns %}
+                <td>{{ row[colname]}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
