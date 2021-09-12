@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 
 #the template used to create the PDF Table
-TABLE_TEMPLATE_FILE = 'table_template.html'
+TABLE_TEMPLATE_FILE = 'Calcul_streamlit/table_template.html'
 #the directory of the HTML version of the table
 BASE_HTML = os.path.join(os.getcwd())
 #the directory of the pdf output
@@ -225,8 +225,7 @@ if __name__ == "__main__":
         
         vis = calculate_ratios(df)
         vis = vis[vis["Annee"] == annee]
-        st.write(vis.head())
-
+       
         if st.checkbox("Visualisation de data",False):
         
             fig = Figure(figsize = (14,6), dpi = 80)
