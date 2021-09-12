@@ -1,0 +1,7 @@
+pandas==1.1.5
+streamlit==0.84.0
+jinja2==3.0.1
+pdfkit==0.6.1
+base64==2.1.0
+seaborn==0.11.0
+matplotlib==3.3.3
